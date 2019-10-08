@@ -62,7 +62,7 @@ def save_company_data():
 
 
 def save_student_data():
-    """Saves all available student data to student.json
+    """Saves all available student data about yourself to student.json
     """
     # Save data to file
 

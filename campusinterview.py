@@ -6,7 +6,7 @@ import requests
 class StudentProfile:
     URL = "https://api.campusinterview.ch/student"
 
-    def __init__(self, mail=None, password=None):
+    def __init__(self, mail=None, password=None, verify_ssl=True):
 
         # Ask for credentials if not provided
         if mail is None:
@@ -16,7 +16,7 @@ class StudentProfile:
 
         # Wether or not the SSL Certificates should get verified.
         # Should be True to avoid MITM voulnerability.
-        self._verify = True
+        self._verify_ssl = verify_ssl
 
         # Private variables to cache results
         self._companies = None
@@ -43,7 +43,7 @@ class StudentProfile:
         session = requests.session()
         response = session.post(self.URL,
                                 data=data,
-                                verify=self._verify)
+                                verify=self._verify_ssl)
 
         # Check that data was transmitted successfully
         response.raise_for_status()
@@ -71,7 +71,7 @@ class StudentProfile:
 
             response = self.session.post(self.URL,
                                          data=data,
-                                         verify=self._verify)
+                                         verify=self._verify_ssl)
 
             # Check that data was transmitted successfully
             response.raise_for_status()
@@ -91,7 +91,7 @@ class StudentProfile:
         }
         response = self.session.post(self.URL,
                                      data=data,
-                                     verify=self._verify)
+                                     verify=self._verify_ssl)
 
         # Check that data was transmitted successfully
         response.raise_for_status()

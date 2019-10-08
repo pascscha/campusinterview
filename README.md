@@ -3,6 +3,8 @@ Displays stats for campusinterview students, such as accepted requests per compa
 
 This tool was made for CampusInterview 2019, it might not work in later years anymore.
 
+Strangely, the script seems to have trouble verifying the sites SSL Certificate (which never happens on other sites). If this is a problem for you and you know what you're doing you can pass the extra argument `verify_ssl=False` to the `StudentProfile` class in `main.py`. Just be aware that this could leak your password and led to MITM attacks.
+
 # Available Functions
 
 ## display_id
