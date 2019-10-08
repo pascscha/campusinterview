@@ -4,19 +4,6 @@ Displays stats for campusinterview students, such as accepted requests per compa
 This tool was made for CampusInterview 2019, it might not work in later years anymore.
 
 # Available Functions
-## display_id
-Displays your Campusinterview ID.
-
-Example:
-```
-./main.py display_id
-```
-Output:
-```
-Please enter your mail address: pascscha@student.ethz.ch
-Please enter your password:
-Your ID is: 5d93 [Censored]
-```
 
 ## display_id
 Displays your Campusinterview ID.
