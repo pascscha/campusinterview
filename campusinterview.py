@@ -16,7 +16,7 @@ class StudentProfile:
 
         # Wether or not the SSL Certificates should get verified.
         # Should be True to avoid MITM voulnerability.
-        self._verify = False
+        self._verify = True
 
         # Private variables to cache results
         self._companies = None
