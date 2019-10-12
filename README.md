@@ -63,7 +63,7 @@ Output:
 Please enter your mail address: pascscha@student.ethz.ch
 Please enter your password:
 
-Firmen, Akzeptierte Bewerbungen (Stand 08.10.2019)
+Firmen, Akzeptierte Bewerbungen (Stand 12.10.2019)
   27 D ONE Solutions AG
   21 AWK Group AG
   16 Stadler
