@@ -63,82 +63,83 @@ Output:
 Please enter your mail address: pascscha@student.ethz.ch
 Please enter your password:
 
-Firmen, Akzeptierte Bewerbungen (Stand 12.10.2019)
+Firmen, Akzeptierte Bewerbungen (Stand 14.10.2019)
+  31 AWK Group AG
   27 D ONE Solutions AG
-  21 AWK Group AG
+  16 ipt Innovation Process Technology
   16 Stadler
-  15 ipt Innovation Process Technology
-  14 EY
-  12 Netlight Consulting AG
-  11 Zühlke Engineering AG
+  15 EY
+  14 Netlight Consulting AG
+  12 Zühlke Engineering AG
+  9 PRODYNA (Schweiz) AG
   9 Unitek Engineering AG
+  9 Bank J. Safra Sarasin Ltd.
   9 Apple
+  8 AdNovum Informatik AG
   8 UNITY Schweiz AG
+  8 Siemens Schweiz AG
+  8 Orbium AG
   8 Oliver Wyman AG
+  8 Horváth & Partners Management Consultants
+  8 Advertima AG
   8 HighCoordination Schweiz GmbH
   8 Digitec Galaxus
   8 ti&m AG
   8 VAT Group AG
+  8 On-Point Connect AG
+  8 Bertschi AG
   8 SIX
+  8 AXA Versicherungen AG
   8 GFT Schweiz AG
+  8 Sensirion AG
   7 Sonova AG
-  7 PRODYNA (Schweiz) AG
-  7 Horváth & Partners Management Consultants
-  7 Sensirion AG
-  7 AXA Versicherungen AG
-  7 Celonis
-  6 Siemens Schweiz AG
-  6 Orbium AG
-  6 WinGD (Winterthur Gas & Diesel Ltd.)
+  7 Optima Nexus Consulting AG
+  7 True Wealth
+  6 KPMG AG
   6 Accenture
   6 HBM Partners AG
-  6 Optima Nexus Consulting AG
-  5 AdNovum Informatik AG
+  6 Celonis
+  6 Bard BD Interventional
+  6 WinGD (Winterthur Gas & Diesel Ltd.)
+  5 Metagon AG
+  5 Netcetera
+  5 saracus consulting AG
   5 Confinale AG
-  5 Bertschi AG
-  4 Metagon AG
-  4 KPMG AG
-  4 Open Systems AG
+  5 Open Systems AG
+  5 Palantir Technologies
+  5 BCT Technology GmbH
+  5 CAMELOT Management Consultants AG
+  4 BSI Business Systems Integration AG
   4 ELCA Informatik AG
-  4 Palantir Technologies
-  4 BCT Technology GmbH
+  4 Partners Group
+  4 Erni Schweiz AG
+  4 abaQon AG
+  4 PostFinance AG
   4 Sunrise Communications AG
-  4 CAMELOT Management Consultants AG
-  4 True Wealth
-  4 Bard BD Interventional
+  4 Sika
   3 PARALLEL Informatik AG
-  3 abaQon AG
-  3 On-Point Connect AG
-  3 Sika
-  2 BSI Business Systems Integration AG
-  2 Netcetera
-  2 saracus consulting AG
-  2 Advertima AG
+  3 Implenia Schweiz AG
+X 3 Simplificator AG
+  2 duagon AG
+  2 fundinfo AG
   2 Noser Engineering AG
-  2 Erni Schweiz AG
   2 Fachgruppe Georessourcen Schweiz
   2 VINCI Energies Schweiz AG
-X 2 Simplificator AG
-  1 fundinfo AG
+  2 PriceHubble AG
+  1 Libera AG
   1 Altersis Performance AG
   0 Sitrox
-  0 Libera AG
   0 UBS
   0 Synpulse Management Consulting Schweiz AG
   0 CSL Behring AG
-  0 duagon AG
   0 APG|SGA, Allgemeine Plakatgesellschaft AG
-  0 PriceHubble AG
+  0 uniqFEED AG
   0 Swissgrid AG
   0 Komax AG
-  0 Bank J. Safra Sarasin Ltd.
-  0 Partners Group
   0 GetYourGuide AG
-  0 Implenia Schweiz AG
   0 Cisco Systems Switzerland
   0 Burckhardt Compression AG
   0 Leica Geosystems - part of Hexagon
-  0 PostFinance AG
   0 Post CH AG
 You are accepted by 1 companies.
 ```
