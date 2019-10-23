@@ -37,7 +37,7 @@ Saved data to companies.json.
 ```
 
 ## save_student_data
-Saves all available student data about yourself to companies.json
+Saves all available student data about yourself to student.json
 
 Example:
 ```
@@ -49,6 +49,21 @@ Please enter your mail address: pascscha@student.ethz.ch
 Please enter your password:
 
 Saved data to student.json.
+```
+
+## save_accepted_request_companies
+Saves all company data for accepted requests to companies_accepted.json. There is much more interesting data about these companies in this file than in the standard companies.json file.
+
+Example:
+```
+./main.py save_accepted_request_companies
+```
+Output:
+```
+Please enter your mail address: pascscha@student.ethz.ch
+Please enter your password:
+
+Saved data to companies_accepted.json.
 ```
 
 ## display_interview_stats
