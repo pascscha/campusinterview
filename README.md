@@ -51,6 +51,52 @@ Please enter your password:
 Saved data to student.json.
 ```
 
+## display_interview_stats
+Shows usefull stats for your upcoming interview, including some otherwise unaccessible information, such as accepted / rejected count, the names and position of the recruiters and wether the company has booked the economy or business package.
+
+```
+Please enter your mail address: pascscha@student.ethz.ch
+Please enter your password:
+
+Sitrox (www.sitrox.com)
+Package: Economy
+Accepted: 3, Rejected: 16
+Recruiters:
+ Marius Roth - HR
+ Thomas Singer - HR
+Interview Goal:
+1. Gegenseitiges Kennenlernen
+2. Diskussion eines Projekts des kandidierenden Person
+3. Weiteres Vorgehen
+
+Bertschi AG (www.bertschi.com)
+Package: Economy
+Accepted: 8, Rejected: 23
+Recruiters:
+ Markus Berner - Leiter Bertschi Digital Logistics
+ Joël Bader - Software Development Teamleader
+Interview Goal:
+Generelle sowie technische Fragen.
+
+Simplificator AG (www.simplificator.com)
+Package: Business
+Accepted: 9, Rejected: 14
+Recruiters:
+ Eppler Lukas - Gründer und Geschäftsführer
+ Blatter Sandra - HR Verantwortliche
+Interview Goal:
+Wir suchen junge, aufgestellte und teamfähige Entwickler (Fullstack), die gerne in einem kleineren Team arbeiten und nicht nur eine "Nummer" sein wollen.
+
+PriceHubble AG (www.pricehubble.com)
+Package: Economy
+Accepted: 8, Rejected: 26
+Recruiters:
+ Batiste Bieler - Lead Frontend Engineer
+ Mario Ubeda Garcia - CTO
+Interview Goal:
+Technical rounds interviews
+```
+
 ## company_acceptance_count
 Sorts all companies by acceptance count and shows which of them accepted you.
 
@@ -63,83 +109,82 @@ Output:
 Please enter your mail address: pascscha@student.ethz.ch
 Please enter your password:
 
-Firmen, Akzeptierte Bewerbungen (Stand 14.10.2019)
-  31 AWK Group AG
-  27 D ONE Solutions AG
+Firmen, Akzeptierte Bewerbungen (Stand 23.10.2019)
+  39 AWK Group AG
+  26 D ONE Solutions AG
+  18 Cisco Systems Switzerland
   16 ipt Innovation Process Technology
+  16 PRODYNA (Schweiz) AG
+  16 Zühlke Engineering AG
+  16 Synpulse Management Consulting Schweiz AG
+  16 Bank J. Safra Sarasin Ltd.
+  16 Partners Group
+  16 Netlight Consulting AG
   16 Stadler
+  16 Leica Geosystems - part of Hexagon
+  15 Orbium AG
   15 EY
-  14 Netlight Consulting AG
-  12 Zühlke Engineering AG
-  9 PRODYNA (Schweiz) AG
+  9 saracus consulting AG
+  9 Siemens Schweiz AG
+  9 KPMG AG
   9 Unitek Engineering AG
-  9 Bank J. Safra Sarasin Ltd.
+  9 Advertima AG
+  9 Accenture
+  9 Erni Schweiz AG
+  9 abaQon AG
+  9 Post CH AG
+  9 True Wealth
   9 Apple
+  9 Bard BD Interventional
+X 9 Simplificator AG
+  9 CAMELOT Management Consultants AG
+  8 Sonova AG
   8 AdNovum Informatik AG
   8 UNITY Schweiz AG
-  8 Siemens Schweiz AG
-  8 Orbium AG
-  8 Oliver Wyman AG
+  8 Confinale AG
+  8 ELCA Informatik AG
+  8 CSL Behring AG
   8 Horváth & Partners Management Consultants
-  8 Advertima AG
+  8 Swissgrid AG
   8 HighCoordination Schweiz GmbH
   8 Digitec Galaxus
   8 ti&m AG
+  8 GetYourGuide AG
+  8 Implenia Schweiz AG
+  8 Palantir Technologies
+  8 BCT Technology GmbH
   8 VAT Group AG
   8 On-Point Connect AG
-  8 Bertschi AG
+  8 Optima Nexus Consulting AG
+X 8 Bertschi AG
   8 SIX
   8 AXA Versicherungen AG
   8 GFT Schweiz AG
+  8 WinGD (Winterthur Gas & Diesel Ltd.)
   8 Sensirion AG
-  7 Sonova AG
-  7 Optima Nexus Consulting AG
-  7 True Wealth
-  6 KPMG AG
-  6 Accenture
+X 8 PriceHubble AG
+  8 VINCI Energies Schweiz AG
+  7 Oliver Wyman AG
+  7 PostFinance AG
+  7 Sika
+  7 Altersis Performance AG
+  7 Celonis
+  7 Noser Engineering AG
+  6 BSI Business Systems Integration AG
+  6 PARALLEL Informatik AG
+  6 Metagon AG
+  6 Netcetera
+  6 UBS
+  6 Open Systems AG
+  6 duagon AG
+  6 fundinfo AG
   6 HBM Partners AG
-  6 Celonis
-  6 Bard BD Interventional
-  6 WinGD (Winterthur Gas & Diesel Ltd.)
-  5 Metagon AG
-  5 Netcetera
-  5 saracus consulting AG
-  5 Confinale AG
-  5 Open Systems AG
-  5 Palantir Technologies
-  5 BCT Technology GmbH
-  5 CAMELOT Management Consultants AG
-  4 BSI Business Systems Integration AG
-  4 ELCA Informatik AG
-  4 Partners Group
-  4 Erni Schweiz AG
-  4 abaQon AG
-  4 PostFinance AG
-  4 Sunrise Communications AG
-  4 Sika
-  3 PARALLEL Informatik AG
-  3 Implenia Schweiz AG
-X 3 Simplificator AG
-  2 duagon AG
-  2 fundinfo AG
-  2 Noser Engineering AG
-  2 Fachgruppe Georessourcen Schweiz
-  2 VINCI Energies Schweiz AG
-  2 PriceHubble AG
-  1 Libera AG
-  1 Altersis Performance AG
-  0 Sitrox
-  0 UBS
-  0 Synpulse Management Consulting Schweiz AG
-  0 CSL Behring AG
-  0 APG|SGA, Allgemeine Plakatgesellschaft AG
-  0 uniqFEED AG
-  0 Swissgrid AG
-  0 Komax AG
-  0 GetYourGuide AG
-  0 Cisco Systems Switzerland
-  0 Burckhardt Compression AG
-  0 Leica Geosystems - part of Hexagon
-  0 Post CH AG
+  6 Fachgruppe Georessourcen Schweiz
+  5 Sunrise Communications AG
+  4 Libera AG
+  4 Komax AG
+X 3 Sitrox
+You are accepted by 4 companies.
+
 You are accepted by 1 companies.
 ```

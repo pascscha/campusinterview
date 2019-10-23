@@ -61,6 +61,76 @@ def save_company_data():
     print("\nSaved data to {}.".format(savefile))
 
 
+def save_accepted_request_companies():
+    """Saves all company data for accepted requests to companies_accepted.json
+    """
+    # Save data to file
+
+    student = StudentProfile()
+
+    savefile = "companies_accepted.json"
+
+    with open(savefile, "w+") as f:
+        json.dump(student.accepted_request_companies, f, indent=1)
+    print("\nSaved data to {}.".format(savefile))
+
+
+def display_interview_stats():
+    """Displays useful stats for upcoming interviews
+    """
+
+    student = StudentProfile()
+
+    data = student.accepted_request_companies
+
+    for company in data:
+        name = company["name"]
+        website = company["website"]
+        n_rejected = len(company["rejectedRequests"])
+        n_accepted = len(company["acceptedRequests"])
+        n_ignored = len(company["gotRequests"])
+        is_business = company["isBusiness"]
+
+        print()
+        print("{} ({})".format(name, website))
+        if is_business:
+            print("Package: Business")
+        else:
+            print("Package: Economy")
+
+        print("Accepted: {}, Rejected: {}".format(n_accepted, n_rejected + n_ignored))
+
+        print("Recruiters:")
+        for participant in company["participants"]:
+            name = participant["name"]
+            position = participant["position"]
+            print(" {} - {}".format(name, position))
+
+        interview_goal = company["interview"]
+        print("Interview Goal:\n{}".format(interview_goal))
+
+
+def display_company_comments():
+    """Displays comments made my companies
+    """
+
+    student = StudentProfile()
+
+    data = student.accepted_request_companies
+
+    for company in data:
+        name = company["name"]
+        comments = company["comments"]
+
+        print()
+        print(name)
+
+        for comment in comments:
+            student = comment["student"]
+            text = comment["comment"]
+            print("{}: {}".format(student, text))
+
+
 def save_student_data():
     """Saves all available student data about yourself to student.json
     """
@@ -83,7 +153,15 @@ def help(functions):
 
 
 if __name__ == "__main__":
-    available_functions = [display_id, company_acceptance_count, save_company_data, save_student_data]
+    available_functions = [
+        display_id,
+        company_acceptance_count,
+        save_company_data,
+        save_student_data,
+        save_accepted_request_companies,
+        display_interview_stats,
+        display_company_comments
+    ]
 
     if len(sys.argv) != 2:
         print("Invalid number of arguments.")

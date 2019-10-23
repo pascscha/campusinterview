@@ -6,7 +6,7 @@ import requests
 class StudentProfile:
     URL = "https://api.campusinterview.ch/student"
 
-    def __init__(self, mail=None, password=None, verify_ssl=True):
+    def __init__(self, mail=None, password=None, verify_ssl=False):
 
         # Ask for credentials if not provided
         if mail is None:
@@ -22,6 +22,8 @@ class StudentProfile:
         self._companies = None
         self._profile = None
         self._id = None
+        self._interviews = None
+        self._accepted_request_companies = None
 
         self.mail = mail
         self.password = password
@@ -98,6 +100,33 @@ class StudentProfile:
 
         return json.loads(response.text)
 
+    def _load_interviews(self):
+        data = {
+            "cmd": "getInterviews",
+            "studentId": "000000000000000000000000"  # Doesn't matter what you put here
+        }
+        response = self.session.post(self.URL,
+                                     data=data,
+                                     verify=self._verify_ssl)
+
+        # Check that data was transmitted successfully
+        response.raise_for_status()
+
+        return json.loads(response.text)
+
+    def _load_accepted_request_companies(self):
+        data = {
+            "cmd": "getAcceptedRequestCompanies"
+        }
+        response = self.session.post(self.URL,
+                                     data=data,
+                                     verify=self._verify_ssl)
+
+        # Check that data was transmitted successfully
+        response.raise_for_status()
+
+        return json.loads(response.text)
+
     @property
     def companies(self):
         if self._companies is None:
@@ -113,3 +142,15 @@ class StudentProfile:
     @property
     def id(self):
         return self.profile["_id"]
+
+    @property
+    def interviews(self):
+        if self._interviews is None:
+            self._interviews = self._load_interviews()
+        return self._interviews
+
+    @property
+    def accepted_request_companies(self):
+        if self._accepted_request_companies is None:
+            self._accepted_request_companies = self._load_accepted_request_companies()
+        return self._accepted_request_companies
